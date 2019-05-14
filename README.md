@@ -23,7 +23,7 @@ N   14     0x3110       Battery Temperature (Probe)
 O   15     0x3111       Temperature inside equipment
 P   16     0x311A       Battery State of Charge
 Q   17     0x3200       Battery Status
-R   18     0x3201       Charging Equipment Status
+R   18     0x3201       Charging Equipment Status  (see below)
 S   19     0x330C       Energy Generated Today
 T   20     0x330E       Energy Generated this Month
 U   21     0x3310       Energy Generated this Year
@@ -34,6 +34,17 @@ Y   25     0x9013       RTC-1
 Z   26     0x9014       RTC-2
 AA  27     0x9015       RTC-3
 AB  28     Coil 2       Manual Control of the Load.   True=Manual On
+
+
+Charging Equipment Status:
+
+     D0:   1=running   0=standby
+     D1:   1=fault     0=normal
+  D3/D2:   00 = No Charging
+           01 = Float
+	   10 = Boost
+	   11 = Equalization
+
 
 </pre>
 
