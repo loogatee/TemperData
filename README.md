@@ -33,6 +33,7 @@ X   24     0x331E       Ambient Temperature
 Y   25     0x9013       RTC-1
 Z   26     0x9014       RTC-2
 AA  27     0x9015       RTC-3
+AB  28     Coil 2       Manual Control of the Load.   True=Manual On
 
 </pre>
 
